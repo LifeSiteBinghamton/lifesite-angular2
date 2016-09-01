@@ -1,0 +1,10 @@
+{
+    "EMAIL": "이메일 주소",
+    "SIGNUP": "회원 가입",
+    "LOGIN": "로그인",
+    "ACTIVATION_SUCCESS_HEADER": "활성화 링크 전송",
+    "ACTIVATION_SUCCESS_MSG": "계정을 활성화 하기 위해 이메일을 확인하시기 바랍니다.",
+    "HAVE_ACCOUNT": "계정이있으세요?",
+    "SIGNING_UP": "가입 하면 에 동의하는 우리의",
+    "TERMS_PRIVACY": "이용 약관 및 개인 정보 보호 정책"
+}

@@ -1,0 +1,21 @@
+<div *ngIf="state === 'activate'" class="ui main text container info__container">
+    <ls-loader [isLoading]="isLoading"></ls-loader>
+    <div class="ui massive success message activate__message-success">
+        <div class="header activate__message-header">
+            Your email was successfully verified
+            <i class="check circle outline icon activate__success-icon"></i>
+        </div>
+    </div>
+
+    <div class="ui raised very padded text container segment">
+        <h2 class="ui header">Let's choose a secure password</h2>
+        <ls-password (onSubmit)="createPassword($event)" buttonLabel="Activate Account"></ls-password>
+    </div>
+</div>
+
+<div *ngIf="state === 'welcome'" class="ui main text container info__container">
+    <div class="ui raised very padded text container segment">
+        <h2 class="ui header">You're all set</h2>
+        <h4 class="ui header">Please click <a (click)="goToLogin()">here</a> to login and get started.</h4>
+    </div>
+</div>

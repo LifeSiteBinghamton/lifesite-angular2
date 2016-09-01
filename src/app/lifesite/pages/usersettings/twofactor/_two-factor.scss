@@ -1,0 +1,17 @@
+@import "~susy/sass/susy";
+
+$susy: (
+    columns: 12
+);
+
+.twofactor__buttons {
+    @include container(12);
+}
+
+#disabledButton {
+    @include span(3 at 1);
+}
+
+#enabledButton {
+    @include span(3 at 4);
+}

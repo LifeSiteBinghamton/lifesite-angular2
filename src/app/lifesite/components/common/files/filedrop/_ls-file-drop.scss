@@ -1,0 +1,18 @@
+.file-drop {
+    &__zone {
+        margin: 10px 0;
+        border: dotted 3px lightgray;
+        min-height: 200px;
+    }
+
+    &__text {
+        color: #AAA;
+        text-align: center;
+        padding: 50px 0;
+        font-size: 1.7em;
+    }
+
+    &--file-is-over {
+        border: dotted 3px green;
+    }
+}

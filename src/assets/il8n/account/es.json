@@ -1,0 +1,13 @@
+{
+    "LOGIN" : {
+        "EMAIL" : "Hola señor",
+        "PASSWORD" : "Password",
+        "REQUIRED_ERROR": "Please enter your email.",
+        "EMAIL_ERROR": "Enter a valid email address.",
+        "PASSWORD_ERROR": "Please enter your password.",
+        "LOGIN_BUTTON": "Login"
+    },
+    "USER_SETTINGS": {
+        "TITLE": "spanish user settings"
+    }
+}

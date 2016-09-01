@@ -1,0 +1,12 @@
+<form class="ui form" [formGroup]="form">
+
+    <template ngFor [ngForOf]="fields" let-field>
+        <ls-form-field [field]="field" [form]="form"></ls-form-field>
+    </template>
+
+    <ng-content select="other-fields"></ng-content>
+
+    <ng-content select="actions"></ng-content>
+
+    <button class="ui button green" [disabled]="!valid" (click)="$event.preventDefault(); doSubmit()">Save</button>
+</form>

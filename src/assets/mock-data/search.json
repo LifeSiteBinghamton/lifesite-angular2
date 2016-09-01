@@ -1,0 +1,392 @@
+{
+    "dashboard": {
+        "data": ["Dashboard", "Home Page", "Main Menu"],
+        "href": "#"
+    },
+    "personal_information_tab_profile": {
+        "data": ["Your Date Of Birth", "First Name", "Gender", "Last Name", "Marital Status", "Middle Name",
+            "Nickname", "Personal", "Place Of Birth", "Profile"
+        ],
+        "href": "#/view/personal_information/profile"
+    },
+    "personal_information_tab_describe_yourself": {
+        "data": ["Describe Yourself", "Ethnicity", "Eye Color", "Hair Color", "Height", "Identifying Marks",
+            "Weight"
+        ],
+        "href": "#/view/personal_information/describe_yourself"
+    },
+    "personal_information_tab_phone_numbers": {
+        "data": ["Phone Numbers"],
+        "href": "#/view/personal_information/phone_numbers"
+    },
+    "personal_information_tab_email_addresses": {
+        "data": ["Email Addresses"],
+        "href": "#/view/personal_information/email_addresses"
+    },
+    "personal_information_tab_identification": {
+        "data": ["Citizenship", "Driver's License", "Driver's License Expiration", "Identification",
+            "Known Traveler Number", "License", "Passport", "Passport Expiration",
+            "Social Security Number", "SSN", "TSA"
+        ],
+        "href": "#/view/personal_information/identification"
+    },
+    "personal_information_tab_address": {
+        "data": ["Address", "City", "Country", "State", "Zip Code"],
+        "href": "#/view/personal_information/address"
+    },
+    "personal_information_tab_religion": {
+        "data": ["Belief", "Contact Information", "Place Of Worship", "Religion"],
+        "href": "#/view/personal_information/religion"
+    },
+    "medical_information_tab_background": {
+        "data": ["Allergies", "Background", "Blood Type", "Emergency Medical Information",
+            "Insurance Card Number", "Medical", "Medical Card", "Medical Number", "Medicine", "Physical",
+            "Surgeries"
+        ],
+        "href": "#/view/medical_information/background"
+    },
+    "medical_information_tab_illnesses": {
+        "data": ["Diagnosed On", "Illnesses", "Person With Illness", "Treated By"],
+        "href": "#/view/medical_information/illnesses"
+    },
+    "medical_information_tab_immunizations": {
+        "data": ["Additional Immunization Details", "Date Given", "Immunizations", "Next Vaccination Date", "Vaccines"],
+        "href": "#/view/medical_information/immunizations"
+    },
+    "medical_information_tab_prescriptions": {
+        "data": ["Dosages", "Medications", "Prescription Filled At Location", "Prescription Refill Date",
+            "Prescribed By Doctor", "Prescriptions"
+        ],
+        "href": "#/view/medical_information/prescriptions"
+    },
+    "medical_information_tab_organ_donation": {
+        "data": ["Donate", "Institution to Donate Body To", "Location Of Donor Card", "Organ Donations"],
+        "href": "#/view/medical_information/organ_donation"
+    },
+    "medical_information_tab_doctors_specialists": {
+        "data": ["Dentists", "Doctors & Specialists", "Doctors & Specialist's Email Address", "Location",
+            "Doctors & Specialist's Name", "Person", "Pharmacist", "Doctors & Specialist's Phone Number",
+            "Physician"
+        ],
+        "href": "#/view/medical_information/doctors_specialists"
+    },
+    "medical_information_tab_family_history": {
+        "data": ["Conditions", "Family History", "Person", "Relationship"],
+        "href": "#/view/medical_information/family_history"
+    },
+    "family_friends_information_tab_familyinfo": {
+        "data": ["Aunt", "Birthday", "Blood Type", "Brother", "Children", "Daughter", "Emergency Contact", "Emergency Medical Information",
+            "Family", "Family Member's Address", "Family Member's Allergies", "Family Member's Date Of Birth",
+            "Family Member's Driver's License", "Family Member's Email Address", "Family Member's Picture",
+            "Family Member's Phone Number", "Family Member's Social Security Number", "Grandparent", "Husband", "Identification",
+            "Known Traveler Number", "Medical", "Medical Card", "Medical Number", "Parent", "Passport",
+            "People", "Physical", "Relationship", "Sibling", "Sister", "Son", "SSN", "Surgeries", "TSA", "Uncle", "Wife"
+        ],
+        "href": "#/view/family_friends_information/familyinfo"
+    },
+    "family_friends_information_tab_friendsinfo": {
+        "data": ["Emergency Contact", "Friends", "Friend's Address", "Friend's Date Of Birth", "Friend's Email Address",
+            "Friend's Name", "Friend's Phone Number"
+        ],
+        "href": "#/view/family_friends_information/friendsinfo"
+    },
+    "family_friends_information_tab_businessinfo": {
+        "data": ["Business Associates", "Business Associate's Address", "Business Associate's Date Of Birth",
+            "Business Associate's Email Address", "Business Associate's Name", "Business Associate's Picture",
+            "Business Associate's Phone Number", "Emergency Contact"
+        ],
+        "href": "#/view/family_friends_information/businessinfo"
+    },
+    "family_friends_information_tab_otherinfo": {
+        "data": ["Emergency Contact", "Other Relationships", "Other Relationship's Address", "Other Relationship's Date Of Birth",
+            "Other Relationship's Email Address", "Other Relationship's Phone Number"
+        ],
+        "href": "#/view/family_friends_information/otherinfo"
+    },
+    "pet_information ": {
+        "data": ["Bird", "Birthday", "Breed/Species", "Cat", "Dietary Information", "Dog", "Fish", "Groomer",
+            "Medical / Vaccination Information", "Microchip ID Number", "Neutered", "Pets", "Pet's Name", "Pet's Picture",
+            "Spayed", "Type Of Pet", "Veterinarian", "Vet Information"
+        ],
+        "href": "#/view/pet_information"
+    },
+    "memberships": {
+        "data": ["Activities", "Clubs", "Expiry Date", "Hobbies", "ID Number", "Membership", "Organizations", "Teams"],
+        "href": "#/view/memberships/memberships"
+    },
+    "onlineaccount_information": {
+        "data": ["Account", "Associated Email Address", "AT&T", "ATT", "Amazon", "America Online", "AOL", "Bank Of America",
+            "Chase", "Comcast", "Craigslist", "Delete Account On Death", "Dropbox", "Ebay", "Evernote", "Facebook",
+            "Gmail", "Google", "Hotmail", "Instagram", "Linkedin", "Mint", "Online Accounts", "Passwords", "Paypal",
+            "Schwab", "Skype", "Sprint", "Steam", "SugarSync", "TMobile", "Twitter", "URL", "Usernames", "Vanguard",
+            "Verizon", "Websites", "Wells Fargo", "Xfinity", "Yahoo"
+        ],
+        "href": "#/view/onlineaccount_information"
+    },
+    "career": {
+        "data": ["Career", "Employer", "Employer Contact Information", "Employment History", "End Date", "Job Description",
+            "Last Position Held", "Responsibilities", "Resume", "Start Date", "Work"
+        ],
+        "href": "#/view/career"
+    },
+    "education": {
+        "data": ["Activities And Societies", "College", "Degree", "Diploma", "Education", "Field Of Study", "Grades",
+            "Graduate", "Graduation Year", "Schools", "Student", "University", "Year Started"
+        ],
+        "href": "#/view/education"
+    },
+    "military": {
+        "data": ["Air Force", "Army", "Awards", "Branch", "Branch of Service", "Coast Guard", "Date of Discharge",
+            "Date Of Entering Service", "Details Of Service", "Discharge", "Location of Discharge Papers",
+            "Highest Rank", "Honors", "Medals", "Military", "Military Honors & Awards", "Navy", "Place of Discharge",
+            "Place Of Entering Service", "Rank", "Service Serial Number", "Type of Discharge", "Veteran"
+        ],
+        "href": "#/view/military"
+    },
+    "income_information_tab_employerbenefits": {
+        "data": ["401k", "403b", "Benefits", "Account Number", "Employer", "Employer Benefits", "Employer Contact Information",
+            "Finances", "Financial Institution", "Financial Institution Contact Information",
+            "IOUS", "Income", "Loans", "Location Of Plans And Accounts", "Plan Description", "Plan Status"
+        ],
+        "href": "#view/income_information/employerbenefits"
+    },
+    "income_information_tab_governmentbenefits": {
+        "data": ["Account Name", "Account Status", "Benefit Description", "Benefit Recipient(s)", "Benefit Type", "Government Benefits",
+            "Individual", "Location of Government Benefit Statements", "Social Security Number"
+        ],
+        "href": "#view/income_information/governmentbenefits"
+    },
+    "income_information_tab_otherassets": {
+        "data": ["Description Of Asset", "Location of Documents", "Other Assets", "Owner(s) Contact Information"],
+        "href": "#view/income_information/otherassets"
+    },
+    "income_information_tab_otherincome": {
+        "data": ["Description Of Income", "Income Source", "Income Source Contact Information", "Location of Income Documents",
+            "Other Income"
+        ],
+        "href": "#view/income_information/otherincome"
+    },
+    "income_information_tab_debtsowedtome": {
+        "data": ["Amount Owed", "Debts Owed To Me", "Location Of Debt Documents", "Source", "Source Contact Information", "Terms Of Debt"],
+        "href": "#view/income_information/debtsowedtome"
+    },
+    "investment_information_tab_bankaccounts": {
+        "data": ["529", "Account Number", "Account Type", "Authorized Signers", "Bank Accounts", "Bank Of America", "Banking", "Chase", "Equities",
+            "Financial Institutions", "Financial Institution Contact Information", "Investments", "Location Of Statements & Account Information",
+            "Shareholder", "Wells Fargo", "Value"
+        ],
+        "href": "#view/investment_information/bankaccounts"
+    },
+    "investment_information_tab_bankcertificates": {
+        "data": ["Amount Invested", "CD", "Certificate Number", "Certificates Of Deposit", "Interest Rate", "Issuer", "Issuer Contact Information",
+            "Maturity Date", "Owner(s)", "Owner(s) Contact Information", "Purchase Date"
+        ],
+        "href": "#view/investment_information/bankcertificates"
+    },
+    "investment_information_tab_bankfunds": {
+        "data": ["Account Number", "Fund Value", "Issuer Name", "Issuer Contact Information", "Owner(s)", "Owner(s) Contact Information",
+            "Location Of Funds", "Money Market Funds", "Type Of Fund"
+        ],
+        "href": "#view/investment_information/bankfunds"
+    },
+    "investment_information_tab_banknotes": {
+        "data": ["Banknotes, Bills, And Bonds", "Face Amount", "Interest Rate", "Issuer", "Location of Note, Bill, or Bond", "Maturity Date",
+            "Owner(s)", "Owner(s) Contact Information)", "Purchase Price", "Series Number", "Taxable"
+        ],
+        "href": "#view/investment_information/banknotes"
+    },
+    "investment_information_tab_stocks": {
+        "data": ["Company", "Company Contact Information", "Current Value", "Location Of Stock Or Certificates", "Number Of Shares",
+            "Option Price Per Share", "Option Expiry Date", "Original Price", "Owner(s)", "Owner(s) Contact Information", "Purchase Date",
+            "Stocks", "Symbol", "Type"
+        ],
+        "href": "#view/investment_information/stocks"
+    },
+    "investment_information_tab_otherinvestments": {
+        "data": ["Amount", "Current Value", "Date Investment Was Made", "Description", "Location Of Investment Documents", "Other Investments"],
+        "href": "#view/investment_information/otherinvestments"
+    },
+    "liabilities_information_tab_creditcards": {
+        "data": ["American Express", "Authorized Signers", "Card / Account Number", "Card Expiration Date", "Card Issuer Contact Information",
+            "Card Issuer Name", "Card Location", "Card Verification Value", "Co-Owner(s)", "Co-Owner(s) Contact Information", "Credit Cards",
+            "Credit Insurance Information", "CVV", "Debit Cards", "Debts I Owe", "Discover", "IOUS", "Liabilities",
+            "Location Of Credit Card Statements", "Mastercard", "My Debts", "Name On Card / Account", "Paypal", "Visa"
+        ],
+        "href": "#view/liabilities_information/creditcards"
+    },
+    "liabilities_information_tab_billpayments": {
+        "data": ["Account Number Debited", "Bill Amount", "Bill Payments", "Credit Account Charged", "Frequency Paid", "Last Paid Date",
+            "Payee Contact Information", "Purpose"
+        ],
+        "href": "#view/liabilities_information/billpayments"
+    },
+    "liabilities_information_tab_loans": {
+        "data": ["Frequency Paid", "Last Paid Date", "Lender's Name", "Lender's Contact Information",
+            "Loan Maturity Date", "Loan Type", "Location Of Loan Documents ", "Loan Payment Amount"
+        ],
+        "href": "#view/liabilities_information/loans"
+    },
+    "businessinterest_information": {
+        "data": ["Accountants", "Accountant Contact Information", "Adviser", "Advisor", "Board Member", "Boards",
+            "Business Cards", "Business Contact Information", "Business Name", "Business Interests", "Business Owner(s)",
+            "Business Owner(s) Contact Information", "Business Type", "Director", "Equity", "Investments", "Investor",
+            "Key Employees", "Legal Advisor", "Legal Advisor Contact Information", "Location Of Business Interest Documents",
+            "LLC", "LLP", "Partners", "Partnerships", "Shareholder", "Stocks"
+        ],
+        "href": "#view/businessinterest_information"
+    },
+    "tax_information": {
+        "data": ["1040", "Audits", "IRS", "Location Of IRS / State Tax Notices", "Location Of Tax Returns", "Taxes",
+            "Tax ID(s)", "Tax Preparer Name & Contact Information", "Tax Year", "W-2"
+        ],
+        "href": "#view/tax_information"
+    },
+    "vehicle_information": {
+        "data": ["Automobiles", "Boats", "Cars", "DMV", "Estimated Value", "Financial Institution", "Inspection Expiration",
+            "Insurance Carrier Information", "Location Of Registration & Title", "License Plate", "Registration", "Titles", "Trucks",
+            "VIN", "Vans", "Vehicle Information", "Vehicles", "Year, Make, and Model"
+        ],
+        "href": "#/view/vehicle_information"
+    },
+    "realestate_information_tab_propertyinfo": {
+        "data": ["Alarm Company", "Alarm Passcode", "Alarm Instructions", "Apartments", "Assets", "Condo", "Condominium",
+            "Deed", "Estimated Value", "Fixed Assets", "Home", "Home Financial Institution", "House", "Keyholder(s)",
+            "Lease", "Location Of Circuit Breaker / Fuse Box", "Location of Lease Agreement", "Location of Mortgage Information",
+            "Location Of Tax Assessment", "Mortgage", "Property Information", "Purchase Date", "Purchase Price", "Real Estate",
+            "Registered Owner", "Rental", "Residence"
+        ],
+        "href": "#/view/realestate_information/propertyinfo"
+    },
+    "realestate_information_tab_servicesinfo": {
+        "data": ["Account Number", "Property Services", "Provider Name", "Service Location"],
+        "href": "#/view/realestate_information/servicesinfo"
+    },
+    "safe_information": {
+        "data": ["Bank Contact Information", "Box Number", "Combination", "Contacts", "Location Of Key(s)", "Location Of Safe",
+            "Payment / Account Information", "People With Authorized Access", "Safes", "Safety Deposit Boxes"
+        ],
+        "href": "#/view/safe_information"
+    },
+    "valuable_information": {
+        "data": ["Antiques", "Artwork", "Computer Equipment", "Computers", "Electronics", "Items", "Jewelry",
+            "Location Of Receipt", "Location Of Valuable", "Memorabilia", "Model Number", "Musical Instruments",
+            "Purchases", "Receipts", "Serial Number", "Sports Equipment", "Tools", "Value", "Valuables"
+        ],
+        "href": "#/view/valuable_information"
+    },
+    "insurance_information": {
+        "data": ["Account/Policy Number", "Agent Name", "Auto", "Business", "Car Insurance", "Casualty", "Company Name",
+            "Credit", "Disability", "Flood Insurance", "Gap", "Health", "Insurance", "Insured Name(s)", "Liability",
+            "Life Insurance", "Policies", "Policy Location", "Policy Owner", "Premium Amount", "Property Insurance",
+            "Unemployment Insurance"
+        ],
+        "href": "#view/insurance_information"
+    },
+    "legal_information_tab_legal_will": {
+        "data": ["Administrator", "Advance Directives", "Codicils", "Directives",
+            "Health Care Agent", "Health Care Directives", "Health Care Proxy",
+            "Healthcare Agent", "Healthcare Directives", "Healthcare Proxy",
+            "Legal Information", "Medical Agent", "Medical Directives",
+            "Medical Power", "Medical Proxy", "Proxy", "Trusts", "Wills"
+        ],
+        "href": "#view/legal_information/legal_will"
+    },
+    "legal_information_tab_legal_executor": {
+        "data": ["Administrators", "Emergency Contact", "Executors", "Executrix", "Guardians"],
+        "href": "#view/legal_information/legal_executor"
+    },
+    "legal_information_tab_legal_powerofattorney": {
+        "data": ["Health Care Power Of Attorney", "Healthcare Power of Attorney", "Power Of Attorney", "Power Of Attorney"],
+        "href": "#view/legal_information/legal_powerofattorney"
+    },
+    "legal_information_tab_legal_livingwill": {
+        "data": ["Agent", "Effective Date", "Living Wills", "Preparer"],
+        "href": "#view/legal_information/legal_livingwill"
+    },
+    "legal_information_tab_legal_legalaction": {
+        "data": ["Attorney", "Case Information", "Claims", "Legal Actions", "Legal Claims"],
+        "href": "#view/legal_information/legal_legalaction"
+    },
+    "funeral_preparations_tab_pre_planning": {
+        "data": ["Arrangements", "Buried", "Cremation", "Death", "Donated", "Embalmed", "Entombed",
+            "Funeral Documents", "Funeral Home", "Legacy", "Obituary", "Preparations"
+        ],
+        "href": "#view/funeral_preparations/pre_planning"
+    },
+    "funeral_preparations_tab_memorialization": {
+        "data": ["Cemetery", "Inscriptions & Emblems", "Memorial Deed", "Memorial Park", "Memorialization"],
+        "href": "#view/funeral_preparations/memorialization"
+    },
+    "funeral_preparations_tab_funeralservices": {
+        "data": ["Funeral Services", "Graveside Service", "Memorial Service", "Open Casket", "Procession", "Reception", "Rosary",
+            "Visitation", "Wake"
+        ],
+        "href": "#view/funeral_preparations/funeralservices"
+    },
+    "funeral_preparations_tab_funeralarrangements": {
+        "data": ["Casket", "Celebrant", "Clergy", "Eulogy Notations", "Floral Preferences", "Musical Selections",
+            "Newspaper & Website Obituary Notices", "Pallbearer", "Personal Reflections", "Religion",
+            "Religious Passages", "Service Arrangements", "Viewing"
+        ],
+        "href": "#view/funeral_preparations/funeralarrangments"
+    },
+    "funeral_preparations_tab_peopletonotify": {
+        "data": ["People To Notify", "Time Of Death"],
+        "href": "#view/funeral_preparations/peopletonotify"
+    },
+    "funeral_futurewishes_tab_bequests": {
+        "data": ["Beneficiaries", "Future Wishes", "Special Bequests"],
+        "href": "#view/funeral_futurewishes/bequests"
+    },
+    "funeral_futurewishes_tab_legacy_communications": {
+        "data": ["Legacy Communications", "Message", "Recipients", "Special Instructions", "When To Send"],
+        "href": "#view/funeral_futurewishes/legacy_communications"
+    },
+    "backupContact": {
+        "data": ["Backup Contact", "Designee", "Inactivity"],
+        "href": "#backupcontact"
+    },
+    "manageCollaborators": {
+        "data": ["Access Control", "Backup Contact", "Backup User", "Collaborators", "Family", "Husband", "Manage Collaborators",
+            "Notifications", "Partner User", "Permissions", "Privileges", "Set Notifications", "Set Privileges",
+            "Sub User", "Sub-User", "Wife"
+        ],
+        "href": "#collaborators"
+    },
+    "fileVault": {
+        "data": ["Albums", "Attachments", "Business Cards", "Documents", "File Storage", "File Vault", "Files", "Miscellaneous",
+            "PDF", "Photos", "Pictures", "Receipts", "Spreadsheets", "Uploads", "Videos"
+        ],
+        "href": "#upload/*"
+    },
+    "lifeBooklet": {
+        "data": ["Backup", "Life Booklet", "PDF", "Print"],
+        "href": "#lifebooklet"
+    },
+    "changePassword": {
+        "data": ["Change Password", "Settings"],
+        "href": "#account/changePassword"
+    },
+    "accountManagement": {
+        "data": ["Account Management", "Close Account", "Delete Account", "Delete User", "Edit Account Details", "Erase", "Manage Subscription",
+            "My Account", "Settings"
+        ],
+        "href": "#account/accountManagement"
+    },
+    "twoFactor": {
+        "data": ["2 Factor", "2-Factor", "2FA", "Security", "Two Factor Authentication"],
+        "href": "#twoFactorAuth"
+    },
+    "deleteData": {
+        "data": ["Delete Your Data", "Delete Your Files", "Erase", "Start Over"],
+        "href": "#delete"
+    },
+    "termsOfService": {
+        "data": ["License Agreement", "Privacy", "TOS", "Terms Of Service"],
+        "href": "#termsofservice"
+    },
+    "privacyPolicy": {
+        "data": ["Privacy Policy"],
+        "href": "#privacy"
+    }
+}

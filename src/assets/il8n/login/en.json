@@ -1,0 +1,11 @@
+{
+    "EMAIL" : "Email Address",
+    "REGISTER": "Register",
+    "PASSWORD" : "Password",
+    "LOGIN": "Login",
+    "REQUIRED_ERROR": "Please enter your email.",
+    "EMAIL_ERROR": "Enter a valid email address.",
+    "PASSWORD_ERROR": "Please enter your password.",
+    "LOGIN_BUTTON": "Login",
+    "CODE401": "Invalid Email or Password."
+}

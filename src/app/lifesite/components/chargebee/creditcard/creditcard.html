@@ -1,0 +1,23 @@
+<div class="credit-card">
+    <ls-loader></ls-loader>
+
+    <template [ngIf]="existingCard">
+        <div class="ui raised card">
+            <div class="content">
+                <div class="header">{{existingCard.card_type | uppercase}} (default card)</div>
+
+                <div class="description">
+                    <img class="ui middle aligned tiny image" src="assets/img/creditcards/{{existingCard.card_type}}.png">
+                    <span>{{existingCard.masked_number}}</span>
+                </div>
+            </div>
+            <div class="ui buttons">
+                <button class="ui button" [routerLink]="['/app/customer/update/payment']">Update this Card</button>
+            </div>
+        </div>
+    </template>
+
+    <div [hidden]="existingCard !== null">
+        <button class="ui button" [routerLink]="['/app/customer/update/payment']">Click to Add a New Credit Card</button>
+    </div>
+</div>

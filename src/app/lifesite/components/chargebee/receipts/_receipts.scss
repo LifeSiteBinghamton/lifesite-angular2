@@ -1,0 +1,45 @@
+@import '~susy/sass/susy';
+@import 'lifesite/responsive';
+
+$susy: (
+    columns: 12
+);
+
+.invoice__row {
+    @include container();
+    padding: 20px;
+
+    &:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.025);
+    }
+}
+
+.invoice__label {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.invoice__detail {
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+.invoice__table-cell {
+    width: 25%;
+}
+
+.invoice__button {
+    @include span(last 2);
+    padding: 10px;
+}
+
+iframe {
+    display: none;
+}
+
+@include susy-breakpoint(0 800px, 12) {
+    .invoice__button {
+        @include span(last 4);
+    }
+}

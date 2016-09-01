@@ -1,0 +1,32 @@
+@import "~susy/sass/susy";
+@import 'lifesite/responsive';
+
+$susy: (
+    columns: 12,
+    debug:(image:hide)
+);
+
+.upgrade {
+    @include container();
+
+    &__container {
+        margin-bottom: 20px;
+    }
+
+    &__actions {
+        text-align: right;
+        clear: both;
+    }
+}
+
+@include susy-breakpoint(0 1100px, 12) {
+    .upgrade__container {
+        @include span(12);
+    }
+}
+
+@include susy-breakpoint(1101px, 12) {
+    .upgrade__container {
+        @include gallery(6);
+    }
+}

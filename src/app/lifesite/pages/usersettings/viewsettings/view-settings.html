@@ -1,0 +1,11 @@
+<div>
+    <language-select currentPage="account"></language-select>
+</div>
+<div>
+    <ls-select id="theme" display="Select Your Theme" [options]="themeOptions"
+               (onChange)="themeChange($event)"></ls-select>
+</div>
+<div>
+    <ls-select id="font" display="Select Your Font Size" [options]="fontOptions"
+               (onChange)="fontChange($event)"></ls-select>
+</div>

@@ -1,0 +1,10 @@
+{
+    "EMAIL" : "Email",
+    "REGISTER": "Registro",
+    "PASSWORD" : "Contraseña",
+    "LOGIN" : "Iniciar Sesión",
+    "REQUIRED_ERROR": "Por favor introduzca su correo electrónico.",
+    "EMAIL_ERROR": "Introduzca una dirección de correo electrónico válida.",
+    "PASSWORD_ERROR": "Por favor, introduzca su contraseña.",
+    "LOGIN_BUTTON": "Iniciar sesión"
+}

@@ -1,0 +1,4 @@
+<ls-loader [isLoading]="isLoading" delay="300"></ls-loader>
+<template [ngIf]="fields">
+    <ls-dynamic-form [fields]="fields" formId="profile" (submitEvent)="onSubmit($event)" #form></ls-dynamic-form>
+</template>

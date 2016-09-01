@@ -1,0 +1,10 @@
+{
+    "EMAIL": "Dirección de correo electrónico",
+    "SIGNUP": "Regístrate",
+    "LOGIN": "Iniciar sesión",
+    "ACTIVATION_SUCCESS_HEADER": "La activación enlace enviado",
+    "ACTIVATION_SUCCESS_MSG": "Por favor, revisa tu e-mail para activar tu cuenta.",
+    "HAVE_ACCOUNT": "¿Tener una cuenta?",
+    "SIGNING_UP": "Al registrarse, usted está de acuerdo con nuestra",
+    "TERMS_PRIVACY": "Condiciones de uso y privacidad"
+}

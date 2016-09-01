@@ -1,0 +1,10 @@
+@import "~susy/sass/susy";
+
+.plan {
+    @include container();
+    padding: 10px 20px;
+}
+
+.plan__switcher {
+    padding-bottom: 20px;
+}

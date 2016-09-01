@@ -1,0 +1,14 @@
+@import "lifesite/mixins";
+
+.register {
+    height: 400px;
+    width: 100%;
+    display: inline-block;
+    @include vertical-align();
+    padding: 0 7% 0 7%;
+    text-align: center;
+}
+
+.register__haveAccount {
+    margin-top: 80px;
+}

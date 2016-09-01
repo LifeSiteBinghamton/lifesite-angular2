@@ -1,0 +1,16 @@
+.filedrop__zone {
+    margin: 10px 0;
+    border: dotted 3px lightgray;
+    height: 200px;
+}
+
+.filedrop__fileover {
+    border: dotted 3px red;
+} /* Default class applied to drop zones on over */
+
+.filedrop__text {
+    color: #AAA;
+    text-align: center;
+    padding: 50px 0;
+    font-size: 1.7em;
+}

@@ -1,0 +1,10 @@
+<div class="grouped fields">
+    <label>{{display}}</label>
+
+    <div *ngFor="let radio of options" class="field">
+        <div class="ui radio checkbox">
+            <input type="radio" name="{{name}}" (click)="onRadioClick(radio.value)" value="{{radio.value}}">
+            <label>{{radio.display}}</label>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="file-display">
+    <table class="ui celled striped table">
+        <thead>
+            <tr>
+                <th></th>
+                <th width="25%">Name</th>
+                <th width="25%">Comment</th>
+                <th>Size</th>
+                <th>Uploaded On</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let file of files">
+                <template [ngIf]="file.processing">
+                    <td class="file-display__cell file-display__cell--is-processing" colspan="6">
+                        <ls-loader [isLoading]="file.processing" [text]="file.filename" [type]="'cell'"></ls-loader>
+                    </td>
+                </template>
+
+                <template [ngIf]="!file.processing">
+                    <td>
+                        <img [src]="file.metadata.url" alt="Thumbnail Preview">
+                    </td>
+                    <td><strong>{{file.metadata?.filename}}</strong></td>
+                    <td nowrap>{{file.metadata?.comment}}</td>
+                    <td nowrap>{{file.length/1024/1024 | number:'.2'}} MB</td>
+                    <td nowrap>{{file.uploadDate | date}}</td>
+                    <td nowrap>
+                        <button class="ui button" (click)="editFileMetadata(file)">
+                            <i class="pencil icon"></i> Edit File
+                        </button>
+                        <button class="ui button" (click)="downloadFile(file)">
+                            <i class="download icon"></i> Download
+                        </button>
+                        <button type="button" class="ui button" (click)="deleteFile(file)">
+                            <i class="trash icon"></i> Delete File
+                        </button>
+                    </td>
+                </template>
+            </tr>
+        </tbody>
+    </table>
+</div>

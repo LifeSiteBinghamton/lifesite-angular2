@@ -1,0 +1,11 @@
+<ls-form (submitEvent)="onSubmit($event)">
+    <h4 class="ui header">Two Factor Authentication</h4>
+    <p>Enable Two Factor Authentication (2FA) feature to provide an additional level of security for your account
+        by protecting your account with both your password and a unique verification code.
+    </p>
+
+    <div class="twofactor__buttons">
+        <ls-input id="disabledButton" name="twofactorbutton" type="radio" display="Disabled"></ls-input>
+        <ls-input id="enabledButton" name="twofactorbutton" type="radio" display="Enabled"></ls-input>
+    </div>
+</ls-form>

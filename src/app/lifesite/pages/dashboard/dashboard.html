@@ -1,0 +1,36 @@
+<page>
+    <div class="widget-container" *ngFor="let alpha of alphaCategories">
+        <div class="widget">
+            <div class="widget__header">
+                <h4 class="widget__title">{{alpha.label}}</h4>
+                <ls-toolbar></ls-toolbar>
+            </div>
+            <div class="widget__content">
+
+                <div class="ui items">
+                    <div class="dashboard__heading">
+                        <div class="left aligned content dashboard__description">
+                            {{alpha.description}}
+                        </div>
+                        <div class="ui right aligned icon dashboard__icon">
+                            <i class="circular {{alpha.icon}} icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <ls-accordion>
+                    <ls-accordion-pane *ngFor="let subcategory of alpha.categories" paneTitle="{{subcategory.label}}">
+                        <div class="ui relaxed animated divided list" *ngFor="let tab of subcategory.tabs">
+                            <div class="item">
+                                <i class="left radio icon"></i>
+                                <div class="content dashboard__tab" (click)="goToTab(tab)">
+                                    {{tab.label}}
+                                </div>
+                            </div>
+                        </div>
+                    </ls-accordion-pane>
+                </ls-accordion>
+            </div>
+        </div>
+    </div>
+</page>

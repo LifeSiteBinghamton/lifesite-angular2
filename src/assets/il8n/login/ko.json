@@ -1,0 +1,11 @@
+{
+    "EMAIL" : "이메일 주소",
+    "REGISTER": "레지스터",
+    "PASSWORD" : "암호",
+    "LOGIN": "로그인",
+    "REQUIRED_ERROR": "이메일을 입력하세요.",
+    "EMAIL_ERROR": "유효한 이메일 주소를 입력합니다.",
+    "PASSWORD_ERROR": "비밀번호를 입력하십시오.",
+    "LOGIN_BUTTON": "로그인",
+    "CODE401": "잘못된 이메일 또는 비밀번호입니다."
+}

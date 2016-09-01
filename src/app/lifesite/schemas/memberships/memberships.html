@@ -1,0 +1,9 @@
+<ls-loader [isLoading]="isLoading" delay="300"></ls-loader>
+
+<template [ngIf]="fields && arrayFormConfig">
+    <ls-dynamic-form [fields]="fields" formId="memberships" (submitEvent)="onSubmit($event)" #form>
+        <other-fields>
+            <ls-array-form [configuration]="arrayFormConfig" [parent]="form"></ls-array-form>
+        </other-fields>
+    </ls-dynamic-form>
+</template>

@@ -1,0 +1,16 @@
+<ls-loader [isLoading]="isLoading"></ls-loader>
+<div class="ui cards">
+    <div class="card" *ngFor="let addOn of addOns">
+        <div class="content">
+            <div class="header">{{addOn.name}}</div>
+            <div class="meta">
+                <a>{{addOn.price/100 | currency:addOn.currency_code:true:'1.2-2'}} one-time fee</a>
+            </div>
+            <div class="description">{{addOn.description}}</div>
+        </div>
+        <div class="ui bottom attached button">
+            <i class="add icon"></i>
+            <span>Add to My Subscription</span>
+        </div>
+    </div>
+</div>

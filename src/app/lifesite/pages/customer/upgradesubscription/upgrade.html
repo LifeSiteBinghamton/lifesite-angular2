@@ -1,0 +1,27 @@
+<page>
+    <div class="widget-container">
+        <div class="widget">
+            <div class="widget__content">
+                <ls-loader [isLoading]="isLoading"></ls-loader>
+                <div class="upgrade">
+                    <div class="upgrade__container">
+                        <estimate #estimate></estimate>
+                    </div>
+
+                    <div class="upgrade__container">
+                        <credit-card #creditCard></credit-card>
+                    </div>
+
+                    <div class="upgrade__actions">
+                        <button class="ui button" [routerLink]="['../..']">Cancel</button>
+                        <button class="ui button green"
+                                [disabled]="creditCard.value === null"
+                                (click)="checkout(estimate.coupon)">
+                            Checkout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</page>

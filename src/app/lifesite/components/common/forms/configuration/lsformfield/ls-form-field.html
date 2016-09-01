@@ -1,0 +1,20 @@
+<div [formGroup]="form" class="field">
+    <label>{{field.label}}</label>
+
+    <div [ngSwitch]="field.fieldType">
+
+        <div *ngSwitchCase="'input'" class="ui small input">
+            <input [formControlName]="field.key" [id]="field.key" [type]="field.type">
+        </div>
+
+        <div *ngSwitchCase="'select'">
+            <select class="ui dropdown" [id]="field.key" [formControlName]="field.key">
+                <option *ngFor="let opt of field.options" [value]="opt.value">{{opt.display}}</option>
+            </select>
+        </div>
+    </div>
+
+    <div [hidden]="isValid || !isTouched" class="ui top pointing red basic label">
+        <span>{{validatorMessage}}</span>
+    </div>
+</div>

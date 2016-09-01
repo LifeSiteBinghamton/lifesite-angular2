@@ -1,0 +1,14 @@
+<div class="page">
+    <div [class.active]="isLoading" class="page__loader ui inverted dimmer">
+        <div class="ui loader"></div>
+    </div>
+
+    <div class="page__header">
+        <ls-breadcrumb></ls-breadcrumb>
+        <ls-toolbar></ls-toolbar>
+    </div>
+
+    <div class="page__content">
+        <ng-content></ng-content>
+    </div>
+</div>

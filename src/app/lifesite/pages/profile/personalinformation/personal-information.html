@@ -1,0 +1,77 @@
+<page>
+
+    <ls-tabs>
+        <ls-tab [tabTitle]="config.tabs[0].label" [tabId]="config.tabs[0].id">
+            <profile></profile>
+        </ls-tab>
+
+        <ls-tab [tabTitle]="config.tabs[2].label" [tabId]="config.tabs[2].id">
+            <phone-numbers></phone-numbers>
+        </ls-tab>
+
+        <ls-tab tabTitle="Files" tabId="files">
+            <ls-file-upload [category]="'personal_information'"></ls-file-upload>
+        </ls-tab>
+
+        <!--<ls-tab [tabTitle]="config.tabs[1].label" [tabId]="config.tabs[1].id">-->
+            <!--<ls-form (submitEvent)="onSubmit($event)" [formId]="config.tabs[1].id">-->
+                <!--<template ngFor [ngForOf]="config.tabs[1].fields" let-field>-->
+                    <!--<ls-input [id]="field.id" [display]="field.label"></ls-input>-->
+                <!--</template>-->
+
+                <!--<ls-submit display="Save"></ls-submit>-->
+            <!--</ls-form>-->
+        <!--</ls-tab>-->
+
+        <!--<ls-tab [tabTitle]="config.tabs[2].label" [tabId]="config.tabs[2].id">-->
+            <!--<ls-form (submitEvent)="onSubmit($event)" [formId]="config.tabs[2].id">-->
+                <!--<template ngFor [ngForOf]="config.tabs[2].fields" let-field>-->
+                    <!--<ls-input [id]="field.id" [display]="field.label"></ls-input>-->
+                <!--</template>-->
+
+                <!--<ls-submit display="Save"></ls-submit>-->
+            <!--</ls-form>-->
+        <!--</ls-tab>-->
+
+        <!--<ls-tab [tabTitle]="config.tabs[3].label" [tabId]="config.tabs[3].id">-->
+            <!--<ls-form (submitEvent)="onSubmit($event)" [formId]="config.tabs[3].id">-->
+                <!--<template ngFor [ngForOf]="config.tabs[3].fields" let-field>-->
+                    <!--<ls-input [id]="field.id" [display]="field.label"></ls-input>-->
+                <!--</template>-->
+
+                <!--<ls-submit display="Save"></ls-submit>-->
+            <!--</ls-form>-->
+        <!--</ls-tab>-->
+
+        <!--<ls-tab [tabTitle]="config.tabs[4].label" [tabId]="config.tabs[4].id">-->
+            <!--<ls-form (submitEvent)="onSubmit($event)" [formId]="config.tabs[4].id">-->
+                <!--<template ngFor [ngForOf]="config.tabs[4].fields" let-field>-->
+                    <!--<ls-input [id]="field.id" [display]="field.label"></ls-input>-->
+                <!--</template>-->
+
+                <!--<ls-submit display="Save"></ls-submit>-->
+            <!--</ls-form>-->
+        <!--</ls-tab>-->
+
+        <!--<ls-tab [tabTitle]="config.tabs[5].label" [tabId]="config.tabs[5].id">-->
+            <!--<ls-form (submitEvent)="onSubmit($event)" [formId]="config.tabs[5].id">-->
+                <!--<template ngFor [ngForOf]="config.tabs[5].fields" let-field>-->
+                    <!--<ls-input [id]="field.id" [display]="field.label"></ls-input>-->
+                <!--</template>-->
+
+                <!--<ls-submit display="Save"></ls-submit>-->
+            <!--</ls-form>-->
+        <!--</ls-tab>-->
+
+        <!--<ls-tab [tabTitle]="config.tabs[6].label" [tabId]="config.tabs[6].id">-->
+            <!--<ls-form (submitEvent)="onSubmit($event)" [formId]="config.tabs[6].id">-->
+                <!--<template ngFor [ngForOf]="config.tabs[6].fields" let-field>-->
+                    <!--<ls-input [id]="field.id" [display]="field.label"></ls-input>-->
+                <!--</template>-->
+
+                <!--<ls-submit display="Save"></ls-submit>-->
+            <!--</ls-form>-->
+        <!--</ls-tab>-->
+    </ls-tabs>
+
+</page>

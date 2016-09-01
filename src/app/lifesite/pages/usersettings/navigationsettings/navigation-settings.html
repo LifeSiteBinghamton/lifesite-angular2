@@ -1,0 +1,24 @@
+<div class="widget__content widget__content--two-column">
+    <div class="widget__content--left">
+        <h5 class="ui header">Your Current Profile</h5>
+        <div class="select-profile">
+            <ls-select id="currentProfile" [options]="profileOptions"
+                       (onChange)="profileChange($event)" width="100%"></ls-select>
+        </div>
+        <ls-accordion>
+            <ls-accordion-pane *ngFor="let category of alphaCategories" paneTitle="{{category.label}}">
+                <div class="ui relaxed animated divided list" *ngFor="let subcategory of category.categories">
+                    <div class="item">
+                        <i class="left radio icon"></i>
+                        <div class="content">
+                            {{subcategory.label}}
+                        </div>
+                    </div>
+                </div>
+            </ls-accordion-pane>
+        </ls-accordion>
+    </div>
+    <div class="widget__content--right">
+        <h5 class="ui header">Create a New Section</h5>
+    </div>
+</div>

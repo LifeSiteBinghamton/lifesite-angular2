@@ -1,0 +1,35 @@
+<div class="file-upload">
+    <div class="container">
+        <div class="row">
+            <ls-file-drop [uploader]="uploader"></ls-file-drop>
+        </div>
+
+        <div class="row">
+            <ls-file-select [uploader]="uploader"></ls-file-select>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <ls-file-display [category]="category"></ls-file-display>
+        </div>
+    </div>
+</div>
+
+<ls-modal [closeOnEscape]="'false'" [closeonoutsideclick]="'false'" (onClose)="_onCloseModal($event)" #modal>
+    <modal-header>Edit Your Files</modal-header>
+
+    <modal-content>
+        <template [ngIf]="_filesToBeBuilt.length">
+            <ls-accordion>
+                <ls-accordion-pane *ngFor="let file of _filesToBeBuilt" [paneTitle]="file.file.name">
+                    <input [(ngModel)]="file.formData.metadata.comment">
+                </ls-accordion-pane>
+            </ls-accordion>
+        </template>
+    </modal-content>
+
+    <modal-footer>
+        <button class="ui button" (click)="modal.close(null)">Close</button>
+    </modal-footer>
+</ls-modal>

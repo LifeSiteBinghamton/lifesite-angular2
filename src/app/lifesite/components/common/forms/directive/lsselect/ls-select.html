@@ -1,0 +1,7 @@
+<div class="field">
+    <label>{{display}}</label>
+    <select class="ui dropdown" #sel id="{{id}}" [formControl]="control" [(ngModel)]="selectedOption" (change)="onChange.emit(sel.value)" [style.width]="width">
+        <option *ngFor="let option of options" [value]="option.value">{{option.display}}</option>
+    </select>
+    <validator-messages [control]="control" [validators]="validators"></validator-messages>
+</div>

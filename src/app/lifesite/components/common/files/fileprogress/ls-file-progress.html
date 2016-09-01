@@ -1,0 +1,56 @@
+<div *ngIf="processStarted || !isClosed" class="widget file-progress">
+    <div class="widget__header">
+        <h4 class="widget__title">
+            Upload Progress
+        </h4>
+        <ls-toolbar [close]="isClosed" [minimize]="isMinimized"
+                    (onClose)="isClosed = $event;" (onMinimze)="isMinimized = $event;"></ls-toolbar>
+    </div>
+
+    <div *ngIf="!isMinimized" class="widget__content">
+        <table class="ui celled striped table">
+            <tbody class="tbody">
+                <tr *ngFor="let file of files">
+                    <td>
+                        <span *ngIf="file.isSuccess"><i class="green checkmark icon"></i></span>
+                        <span *ngIf="file.isCancel"><i class="ban icon"></i></span>
+                        <span *ngIf="file.isError"><i class="red remove icon"></i></span>
+                    </td>
+
+                    <td class="file_progress__cell--large">
+                        <p>{{ file.filename }}</p>
+                    </td>
+
+                    <td nowrap>
+                        {{ file.length/1024/1024 | number:'.2' }} MB
+                    </td>
+
+                    <td class="file_progress__cell--large" nowrap>
+                        <div class="ui green progress file-progress__bar"
+                             [class.active]="file.processing"
+                             [class.success]="!file.processing && file.isSuccess">
+
+                            <div class="bar" [ngStyle]="{ 'width': file.progress + '%' }">
+                                <template [ngIf]="file.processing && file.progress > 20">
+                                    <div class="progress file-progress__bar-text">
+                                        {{file.progress >= 98 ? 'Encrypting' : file.progress + '%'}}
+                                    </div>
+                                </template>
+                                <template [ngIf]="!file.processing && file.isSuccess">
+                                    <div class="progress file-progress__bar-text">Done</div>
+                                </template>
+                            </div>
+
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div *ngIf="files.length > 1 && !allComplete" class="ui teal active progress">
+            <div class="bar" [ngStyle]="{ 'width': totalProgress + '%' }">
+                <div class="progress"></div>
+            </div>
+            <div class="label">Uploading Files</div>
+        </div>
+    </div>
+</div>

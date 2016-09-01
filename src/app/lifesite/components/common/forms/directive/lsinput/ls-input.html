@@ -1,0 +1,7 @@
+<div class="field">
+    <label>{{display}}</label>
+    <div class="ui small input">
+        <input type="{{type}}" id="{{id}}" placeholder="{{placeholder}}" [formControl]="control"/>
+    </div>
+    <validator-messages [control]="control" [validators]="validators"></validator-messages>
+</div>

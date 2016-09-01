@@ -1,0 +1,64 @@
+<div class="estimate ui segments" *ngIf="estimate">
+    <ls-loader [isLoading]="isLoading" delay="250"></ls-loader>
+    <div class="ui segment" *ngIf="route.snapshot.params['id'] !== 'lifesite-basic'">
+        <h2 class="ui header">Have a coupon?</h2>
+        <div class="ui segment">
+            <div class="ui action input">
+                <input type="text" placeholder="Coupon Code" [(ngModel)]="coupon">
+                <button class="ui green right labeled icon button" (click)="applyCoupon();">
+                    <i class="tag icon"></i>
+                    Apply Coupon Code
+                </button>
+            </div>
+            <div class="ui negative message" *ngIf="couponState === 'couponError'">
+                <i class="close icon" (click)="couponState = ''"></i>
+                <div class="header">Sorry! We can't apply that coupon.</div>
+                <p>
+                    That is an invalid coupon code, or it doesn't exist in our system yet.
+                </p>
+            </div>
+            <div class="ui positive message" *ngIf="couponState === 'couponSuccess'">
+                <i class="close icon" (click)="couponState = ''"></i>
+                <div class="header">Valid coupon.</div>
+                <p>
+                    We've applied that coupon for you! Look at all the savings!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="ui segment">
+        <h2 class="ui header">Subscription Summary</h2>
+    </div>
+    <div class="ui segments">
+        <div class="ui segment">
+            <span>Your subscription will start on: </span>
+            <span class="ui small header">{{estimate.created_at * 1000 | date}}</span>
+        </div>
+        <div class="ui segment">
+            <span>Your next billing date is: </span>
+            <span class="ui small header">{{estimate.subscription_estimate.next_billing_at * 1000 | date}}</span>
+        </div>
+        <div class="ui segment">
+            <span>Total to be charged today: </span>
+            <span class="ui small header" *ngIf="estimate.invoice_estimate">
+                {{estimate.invoice_estimate.total / 100 | currency:estimate.subscription_estimate.currency_code :true:'1.2-2'}}
+            </span>
+            <span class="ui small header" *ngIf="!estimate.invoice_estimate">
+                $0
+            </span>
+        </div>
+    </div>
+    <div class="ui segment" *ngIf="estimate.credit_note_estimates">
+        <h2 class="ui header">Credits</h2>
+        <div class="ui segments"  *ngFor="let creditNote of estimate.credit_note_estimates">
+            <div class="ui segment" *ngFor="let lineItem of creditNote.line_items">
+                <span>A total of
+                    {{(lineItem.unit_amount / 100) - (lineItem.discount_amount / 100) | currency:estimate.subscription_estimate.currency_code :true:'1.2-2'}}
+                    will be credited for the unused period of
+                    {{lineItem.date_from * 1000 | date}} - {{lineItem.date_to * 1000 | date}}, out of which
+                    {{ creditNote.amount_allocated / 100 | currency:estimate.subscription_estimate.currency_code :true:'1.2-2' }}
+                    will be applied on the immediate invoice above.</span>
+            </div>
+        </div>
+    </div>
+</div>

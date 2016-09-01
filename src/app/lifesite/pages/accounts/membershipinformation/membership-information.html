@@ -1,0 +1,11 @@
+<page>
+    <ls-tabs>
+        <ls-tab [tabTitle]="config.tabs[0].label" [tabId]="config.tabs[0].id">
+            <memberships></memberships>
+        </ls-tab>
+
+        <ls-tab tabTitle="Files" tabId="files">
+            <ls-file-upload [category]="'membership_information'"></ls-file-upload>
+        </ls-tab>
+    </ls-tabs>
+</page>

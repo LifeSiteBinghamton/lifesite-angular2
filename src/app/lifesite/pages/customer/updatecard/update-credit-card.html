@@ -1,0 +1,70 @@
+<page>
+    <div class="widget-container">
+        <div class="widget">
+            <div class="widget__content">
+                <ls-loader [isLoading]="isLoading"></ls-loader>
+
+                <div class="credit-card">
+                    <ls-form (submitEvent)="submitForm($event)">
+                        <div class="ui segment">
+                            <h3 class="ui header">Billing Address Information</h3>
+                            <div class="credit-card__form-row">
+                                <ls-input id="billing_addr1" display="Address 1"></ls-input>
+                            </div>
+
+                            <div class="credit-card__form-row">
+                                <ls-input id="billing_addr2" display="Address 2"></ls-input>
+                            </div>
+
+                            <div class="credit-card__form-row">
+                                <ls-input id="billing_city" display="City"></ls-input>
+                            </div>
+
+                            <div class="credit-card__form-row">
+                                <div class="span">
+                                    <ls-select id="billing_state_code" display="State" [options]="stateList" validatorList="required"></ls-select>
+                                </div>
+                                <div class="span">
+                                    <ls-input id="billing_zip" display="Zip Code"></ls-input>
+                                </div>
+                            </div>
+
+                            <div class="credit-card__form-row" style="display: none;">
+                                <ls-input id="billing_country" display="Country" value="US"></ls-input>
+                            </div>
+                        </div>
+
+                        <div class="ui hidden divider"></div>
+
+                        <div class="ui segment">
+                            <h3 class="ui header">Credit Card Information</h3>
+                            <div class="credit-card__form-row">
+                                <div class="span">
+                                    <ls-input id="number" display="Card Number" type="text" placeholder="1111 2222 3333 4444" validatorList="creditcard"></ls-input>
+                                </div>
+                                <div class="span">
+                                    <ls-input id="cvv" display="Security Code" type="text" validatorList="required"></ls-input>
+                                </div>
+                            </div>
+
+                            <label>Expiry Date</label>
+                            <div class="credit-card__form-row">
+                                <div class="span">
+                                    <ls-select id="expiry_month" display="" [options]="monthList" validatorList="required"></ls-select>
+                                </div>
+                                <div class="span">
+                                    <ls-select id="expiry_year" display="" [options]="yearList" validatorList="required"></ls-select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="credit-card__button-container">
+                            <button class="ui button" (click)="$event.preventDefault(); routeLocation.back();">Back</button>
+                            <ls-submit display="Save Credit Card"></ls-submit>
+                        </div>
+                    </ls-form>
+                </div>
+            </div>
+        </div>
+    </div>
+</page>

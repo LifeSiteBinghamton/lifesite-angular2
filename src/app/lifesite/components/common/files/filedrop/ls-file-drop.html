@@ -1,0 +1,9 @@
+<div class="file-drop">
+    <div class="well file-drop__zone"
+         ng2FileDrop [uploader]="uploader" (onFileDrop)="filesDropped($event)"
+         (fileOver)="fileIsOver($event)" [ngClass]="{'file-drop--file-is-over': hasFileOver}">
+        <h5 class="file-drop__text">
+            Drag & Drop your files here...
+        </h5>
+    </div>
+</div>

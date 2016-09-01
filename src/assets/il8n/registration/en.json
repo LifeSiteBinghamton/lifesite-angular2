@@ -1,0 +1,10 @@
+{
+    "EMAIL": "Email Address",
+    "SIGNUP": "Sign Up",
+    "LOGIN": "Login",
+    "ACTIVATION_SUCCESS_HEADER": "Activation Link Sent",
+    "ACTIVATION_SUCCESS_MSG": "Please check your email to activate your account.",
+    "HAVE_ACCOUNT": "Have an account?",
+    "SIGNING_UP": "By signing up, you agree to our",
+    "TERMS_PRIVACY": "Terms of Use and Privacy Policy"
+}

@@ -1,0 +1,15 @@
+<div class="ui dimmer modals page" [class.active]="active" (click)="closeOnOutsideClick ? close() : 0">
+    <div #modalRoot class="ui modal" [class.active]="active" (click)="$event.stopPropagation();" (keydown.esc)="closeOnEscape ? close() : 0">
+        <div class="header">
+            <ng-content select="modal-header"></ng-content>
+        </div>
+
+        <div class="content">
+            <ng-content select="modal-content"></ng-content>
+        </div>
+
+        <div class="actions">
+            <ng-content select="modal-footer"></ng-content>
+        </div>
+    </div>
+</div>

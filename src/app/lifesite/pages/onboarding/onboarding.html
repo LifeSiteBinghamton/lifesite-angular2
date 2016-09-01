@@ -1,0 +1,14 @@
+<page>
+    <div class="ui raised very padded text container segment">
+        <h2 class="ui header">What's your name?</h2>
+        <div class="step" *ngIf="currentStepIdx === 0">
+            <ls-form class="form">
+
+                <ls-input id="first_name" display="First Name" validatorList="required"></ls-input>
+                <ls-input id="last_name" display="Last Name" validatorList="required"></ls-input>
+
+                <button class="ui button onboarding__next" (click)="next($event)">Next</button>
+            </ls-form>
+        </div>
+    </div>
+</page>

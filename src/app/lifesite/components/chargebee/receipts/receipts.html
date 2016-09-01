@@ -1,0 +1,87 @@
+<ls-loader [isLoading]="isLoading"></ls-loader>
+<div *ngIf="state === 'viewReceipts'">
+    <table class="ui very basic table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Order ID</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let invoice of invoices">
+                <td class="invoice__table-cell">{{invoice.date * 1000 | date}}</td>
+                <td class="invoice__table-cell">{{invoice.id}}</td>
+                <td class="invoice__table-cell">{{invoice.amount_paid / 100 | currency:currencyCode:true:'1.2-2'}}</td>
+                <td class="invoice__table-cell">
+                    <a class="ui icon button" (click)="downloadInvoice(invoice)">
+                        <div class="content">
+                            <i class="download icon"></i>
+                            Download Invoice
+                        </div>
+                    </a>
+                    <button class="ui animated button" (click)="showInvoice(invoice)">
+                        <div class="visible content">
+                            View
+                        </div>
+                        <div class="hidden content">
+                            <i class="right arrow icon"></i>
+                        </div>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div *ngIf="state === 'viewInvoice'">
+    <div class="row invoice__row">
+        <label class="invoice__label">Date: </label>
+        <label class="invoice__detail">{{currentInvoice.date * 1000 | date}}</label>
+    </div>
+
+    <div class="row invoice__row">
+        <label class="invoice__label">Order number: </label>
+        <label class="invoice__detail">{{currentInvoice.id}}</label>
+    </div>
+
+    <!-- TODO Take refunds and addons into account -->
+    <div *ngFor="let transaction of transactions" class="row invoice__row">
+        <label class="invoice__label">Payment Method: </label>
+        <label *ngIf="transaction.payment_method === 'card'" class="invoice__detail">{{transaction.masked_card_number}}</label>
+        <label *ngIf="transaction.payment_method !== 'card'" class="invoice__detail">{{transaction.payment_method}}</label>
+    </div>
+
+    <div *ngFor="let item of currentInvoice.line_items">
+        <div class="row invoice__row">
+            <label class="invoice__label">Description: </label>
+            <label class="invoice__detail">{{item.description}}</label>
+        </div>
+        <div class="row invoice__row">
+            <label class="invoice__label">Price: </label>
+            <label class="invoice__detail">{{item.unit_amount / 100 | currency:currencyCode:true:'1.2-2'}}</label>
+        </div>
+    </div>
+
+    <div class="row invoice__row">
+        <label class="invoice__label">Sales tax 0%: </label>
+        <label class="invoice__detail">{{currentInvoice.tax / 100 | currency:currencyCode:true:'1.2-2'}}</label>
+    </div>
+
+    <div class="row invoice__row">
+        <label class="invoice__label">Total: </label>
+        <label class="invoice__detail">{{currentInvoice.total / 100 | currency:currencyCode:true:'1.2-2'}}</label>
+    </div>
+
+    <div class="row invoice__row">
+        <button class="ui animated button invoice__button" (click)="state = 'viewReceipts';">
+            <div class="visible content">
+                Back to Receipts
+            </div>
+            <div class="hidden content">
+                <i class="left arrow icon"></i>
+            </div>
+        </button>
+    </div>
+</div>
